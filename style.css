@@ -5,7 +5,35 @@ body, html {
     align-items: center;
     height: 100%;
 }
+.button-open {
+    background-color: transparent;
+    margin: 10px 30px;
+    padding: 20px 30px;
+    border: 5px solid rgb(33, 29, 29);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.button-open:hover {
+    background-color: rgb(182, 185, 188);
+}
+.background-text {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    line-height: 2;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
 .box {
+    position: relative;
     display: flex;
     padding: 40px;
     margin: auto;
@@ -24,6 +52,7 @@ body, html {
     padding: 40px;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
 }
 .button {
     background-color: transparent;
@@ -31,16 +60,22 @@ body, html {
     padding: 15px;
     border: solid white;
     cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: rgb(44, 42, 42);
 }
 .img {
+    position: relative;
     background-image: url(img.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
     width: 300px;
     height: 300px;
 }
-.x {
+.close {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -53,7 +88,7 @@ body, html {
         flex-direction: column-reverse;
         margin: auto;
     }
-    .img, {
+    .img {
         width: 100%;
         height: 300px;
         aspect-ratio: 1/1;
