@@ -1,9 +1,101 @@
 body, html {
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
     height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    position: fixed;
+    background-color: #ffffff;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 20px;
+}
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0; 
+}
+.menu, .menu-mega {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px;
+    border: transparent;
+    border-radius: 10px;
+    height: 100%;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    font-weight: 520;
+}
+.menu:hover, .menu-mega:hover {
+  color: #f8cc1c;
+}
+.menu-mega-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+  
+    padding: 15px;
+    background-color: #ffffff;
+    gap: 60px;
+    flex-direction: row;
+    grid-template-columns: 150px 150px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.15);
+}   
+.menu-mega:hover .menu-mega-dropdown {
+    display: grid;
+}   
+.menu-mega-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu-mega-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.menu-heading {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.item-icon {
+    width: 24px;
+    height: auto;
+    object-fit: contain;
+}
+.item-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #000000;
+}
+.item-desc {
+    font-size: 12px;
+    color: #666;
+}
+.logo {
+    display: block;
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 .button-open {
     background-color: transparent;
@@ -18,26 +110,33 @@ body, html {
     background-color: rgb(182, 185, 188);
 }
 .background-text {
-    position: fixed;
-    height: 100%;
-    width: 100%;
+    position: relative;
     line-height: 2;
     padding: 5px;
     box-sizing: border-box;
     text-align: justify;
+    z-index: 1;
+    padding-top: 60px;
 }
 .overlay {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 100;  
 }
 .box {
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     padding: 40px;
     margin: auto;
     box-sizing: border-box;
+    z-index: 1000;
 }
 .left {
     background-color: black;
@@ -71,7 +170,6 @@ body, html {
     position: relative;
     background-size: cover;
     background-position: center;
-
     width: 300px;
     height: 300px;
 }
