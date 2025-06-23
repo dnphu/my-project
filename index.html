@@ -113,9 +113,49 @@
             </ul>
 
             <div class="header-button">
-                <a href="#" class="icon-button">
+                <a href="#" id="searchIcon" class="icon-button">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
+                <div id="search-container" class="search-container hidden">
+                    <div class="search-row">
+                        <div class="search-box">
+                            <span class="fa fa-search search-icon"></span>
+                            <input type="text" id="mainSearchInput" placeholder="Search for..." class="search-input" />
+                            <button id="clearButton" class="clear-button"><i class="fa-solid fa-circle-xmark"></i></button>
+                        </div>
+                        <button id="cancelButton" class="cancel-button">Cancel</button>
+                    </div>
+                    <div class="hot-trading">
+                    <h3>Hot Trading</h3>
+                    <ul class="trending-list">
+                        <li>
+                        <span class="rank">1</span>
+                        <img src="btc.png" alt="BTC" class="brand-icon" />
+                        <span class="pair">BTC/USDT</span>
+                        </li>
+                        <li>
+                        <span class="rank">2</span>
+                        <img src="eth.png" alt="ETH" class="brand-icon" />
+                        <span class="pair">ETH/USDT</span>
+                        </li>
+                        <li>
+                        <span class="rank">3</span>
+                        <img src="sol.png" alt="SOL" class="brand-icon" />
+                        <span class="pair">SOL/USDT</span>
+                        </li>
+                        <li>
+                        <span class="rank">4</span>
+                        <img src="xrp.png" alt="XRP" class="brand-icon" />
+                        <span class="pair">XRP/USDT</span>
+                        </li>
+                        <li>
+                        <span class="rank">5</span>
+                        <img src="doge.png" alt="DOGE" class="brand-icon" />
+                        <span class="pair">DOGE/USDT</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
                 <a href="#" class="btn-login">Log In</a>
                 <a href="#" class="btn-signup">Sign Up</a>
                 <a href="#" class="icon-button">
@@ -279,7 +319,6 @@
             <img src="img.jpg" alt="Ảnh phòng gym" />
             <div class="close">✕</div>
         </div>
-    </div>
     <script>
         const toggles = document.querySelectorAll('.theme');
         toggles.forEach(btn => {
@@ -304,6 +343,42 @@
                 arrow.classList.toggle('rotated')
             });
         });
+    </script>
+    <script>
+        const searchContainer = document.getElementById("search-container");
+        const searchIcon = document.getElementById("searchIcon");
+        const searchInput = document.getElementById("mainSearchInput");
+        const clearButton = document.getElementById("clearButton");
+        const cancelButton = document.getElementById("cancelButton");
+
+        searchIcon.addEventListener("click", () => {
+        searchContainer.classList.toggle("hidden");
+        searchInput.focus();
+        });
+
+        clearButton.addEventListener("click", () => {
+        searchInput.value = "";
+        searchInput.focus();
+        });
+
+        cancelButton.addEventListener("click", () => {
+        searchContainer.classList.add("hidden");
+        searchInput.value = "";
+        });
+    </script>
+    <script>
+
+        const searchInput2 = document.getElementById("mainSearchInput");
+        const trendingItems = document.querySelectorAll(".trending-list li");
+
+        searchInput2.addEventListener("input", () => {
+            const keyword = searchInput2.value.toLowerCase();
+            trendingItems.forEach(item => {
+                const pair = item.querySelector(".pair").textContent.toLowerCase();
+                item.style.display = pair.includes(keyword) ? "flex" : "none";
+            });
+        });
+
     </script>
     <script>
         const closeBtn = document.querySelector('.close');
