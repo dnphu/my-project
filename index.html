@@ -319,6 +319,132 @@
             <img src="img.jpg" alt="Ảnh phòng gym" />
             <div class="close">✕</div>
         </div>
+    </div>
+    <footer class="footer-grid">
+        <div class="footer-column">
+            <h3>Community</h3>
+            <div class="social-icon">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-reddit"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-chart-line"></i></a> 
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </div>
+            <div class="footer-settings">
+                <p><i class="fas fa-globe"></i> English</p>
+                <p><i class="fas fa-dollar-sign"></i> USD-$</p>
+                <p>Theme 
+                <a class="icon-button theme">
+                    <i class="fas fa-sun icon-light"></i>
+                    <i class="fas fa-moon icon-dark"></i>
+                </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-item">
+            <h3>About Us<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Building Trust</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Risk Warning</a></li>
+                <li><a href="#">Notices</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Desktop Application</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-item">
+            <h3>Products<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+            <ul>
+                <li><a href="#">Exchange</a></li>
+                <li><a href="#">Buy Crypto</a></li>
+                <li><a href="#">Pay</a></li>
+                <li><a href="#">Academy</a></li>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Tax</a></li>
+                <li><a href="#">Gift Card</a></li>
+                <li><a href="#">Launchpool</a></li>
+                <li><a href="#">Auto-Invest</a></li>
+                <li><a href="#">ETH Staking</a></li>
+                <li><a href="#">NFT</a></li>
+                <li><a href="#">BABT</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Charity</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-item">
+            <h3>Business<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+            <ul>
+                <li><a href="#">P2P Merchant Application</a></li>
+                <li><a href="#">P2Pro Merchant Application</a></li>
+                <li><a href="#">Listing Application</a></li>
+                <li><a href="#">Institutional & VIP Services</a></li>
+                <li><a href="#">Labs</a></li>
+                <li><a href="#">Binance Connect</a></li>
+            </ul>
+            </div>
+            <div class="footer-item">
+            <h3>Learn<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+            <ul>
+                <li><a href="#">Learn & Earn</a></li>
+                <li><a href="#">Browse Crypto Prices</a></li>
+                <li><a href="#">Bitcoin Price</a></li>
+                <li><a href="#">Ethereum Price</a></li>
+                <li><a href="#">Crypto Price Predictions</a></li>
+                <li><a href="#">Buy Bitcoin</a></li>
+                <li><a href="#">Buy BNB</a></li>
+                <li><a href="#">Buy XRP</a></li>
+                <li><a href="#">Buy Ethereum</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-item">
+            <h3>Service<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+            <ul>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Referral</a></li>
+                <li><a href="#">BNB</a></li>
+                <li><a href="#">OTC Trading</a></li>
+                <li><a href="#">Historical Market Data</a></li>
+                <li><a href="#">Trading Insight</a></li>
+                <li><a href="#">Proof of Reserves</a></li>
+            </ul>
+            </div>
+            <div class="footer-item">
+            <h3>Support<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+            <ul>
+                <li><a href="#">24/7 Chat Support</a></li>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">Product Feedback</a></li>
+                <li><a href="#">Fees</a></li>
+                <li><a href="#">APIs</a></li>
+                <li><a href="#">Binance Verify</a></li>
+                <li><a href="#">Airdrop Portal</a></li>
+                <li><a href="#">Trading Rules</a></li>
+            </ul>
+            </div>
+        </div>
+    </footer>
     <script>
         const toggles = document.querySelectorAll('.theme');
         toggles.forEach(btn => {
@@ -395,6 +521,15 @@
             overlay.style.display = 'block';
         });
     </script>
+    <script>
+        document.querySelectorAll('.footer-item h3').forEach(header => {
+        header.addEventListener('click', () => {
+        const parent = header.closest('.footer-item');
+        parent.classList.toggle('open');
+    });
+    });
+    </script>
+
 </body>
 
 </html>
