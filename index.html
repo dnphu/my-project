@@ -320,6 +320,65 @@
             <div class="close">✕</div>
         </div>
     </div>
+    <div class="faq-wrapper">
+        <div class="faq-header">
+            <h2>FAQ</h2>
+            <a class="faq-link" href="#">ALL FAQ →</a>
+        </div>
+        <div class="faq-section">
+            <div class="faq-column">
+                <button class="accordion-button">How to Find NFTs on Binance NFT Marketplace</button>
+                <div class="panel-content">
+                    <p>You can search through the wide variety of NFTs on our marketplace in four ways:</p>
+                    <ul>
+                        <li>Find the latest drops from cross-chain NFT listings on the Marketplace.</li>
+                        <li>Narrow your NFT search in a variety of ways using our new filters.</li>
+                        <li>View popular NFTs through the leaderboards to find NFTs based on specific metrics.</li>
+                        <li>Search for NFTs by interest using specific keywords.</li>
+                    </ul>
+                </div>
+                <button class="accordion-button">How do I sell an NFT?</button>
+                <div class="panel-content">
+                    <p>All NFT assets on Binance NFT are discoverable even if they’re not listed for sale. You can list and sell your NFTs and Mystery Boxes in three ways.</p>
+                    <ul>
+                        <li>Fixed Price: Set a fixed price for your NFT on the listing page, which will allow buyers to purchase your NFT instantly with the price you set.</li>
+                        <li>Auction: Click [Highest Bid] on the listing page.</li>
+                        <li>Accept an Offer: You can accept offers from buyers on fixed-price NFTs and Mystery Boxes.</li>
+                    </ul>
+                </div>
+                <button class="accordion-button">How do I Deposit an NFT?</button>
+                <div class="panel-content">
+                    <p>On your Binance NFT [Profile], click [Deposit]. Connect your wallet and choose the network of your wallet. Next, select the NFTs/NFT collections you want to deposit to Binance in the connected wallet and click [Deposit Now].</p>
+                </div>
+            </div>
+            <div class="faq-column">
+                <button class="accordion-button">How do I buy an NFT?</button>
+                <div class="panel-content">
+                    <p>You can buy NFTs and Mystery Boxes on the Binance NFT Marketplace in three ways.</p>
+                    <ul>
+                        <li>Fixed Price: Click the [Buy Now] button on the product page and complete the transaction.</li>
+                        <li>Auction: Click [Place a Bid] to enter your bid price and confirm the offer.</li>
+                        <li>Make an Offer: Make offers to the seller on fixed-price NFTs and Mystery Boxes by clicking</li>
+                    </ul>
+                </div>
+                <button class="accordion-button">What are the NFT Transaction Fees on Binance?</button>
+                <div class="panel-content">
+                    <p>Transaction fees may apply when you mint, trade, deposit, withdraw, create, and burn NFTs on the Binance NFT marketplace. These transaction fees are calculated based on various factors, which include market conditions and network status.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-footer">
+            <div class="faq-contact">
+                Please contact us if you have any specific idea or request.
+                <span class="email-icon"><i class="fa-solid fa-envelope"></i></span>
+                <a href="mailto:myproject.com">myproject.com</a>
+            </div>
+            <div class="faq-community">
+                Community
+                <span class="email-icon"><i class="fa-solid fa-paper-plane"></i></span>
+            </div>
+        </div>
+    </div>
     <footer class="footer-grid">
         <div class="footer-column">
             <h3>Community</h3>
@@ -522,11 +581,20 @@
         });
     </script>
     <script>
+        document.querySelectorAll('.accordion-button').forEach(btn => {
+            btn.onclick = () => {
+                btn.classList.toggle('active');
+                const panel = btn.nextElementSibling;
+                panel.classList.toggle('open');
+            };
+        });
+    </script>
+    <script>
         document.querySelectorAll('.footer-item h3').forEach(header => {
         header.addEventListener('click', () => {
         const parent = header.closest('.footer-item');
         parent.classList.toggle('open');
-    });
+        });
     });
     </script>
 
