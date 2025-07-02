@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -271,7 +272,21 @@
     </div>
     </div>
     </div>
-
+    <div class="slider-section">
+        <div class="slider-header">
+            <h2>One-stop platform for all things NFTs</h2>
+            <p>Trade, Stake and Loan NFTs securely on Binance NFT</p>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="nft1.webp" /></div>
+                <div class="swiper-slide"><img src="nft2.webp" /></div>
+                <div class="swiper-slide"><img src="nft3.webp" /></div>
+                <div class="swiper-slide"><img src="nft4.webp" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
     <div class="background-text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet nisl vitae quam semper aliquam quis sit
             amet leo. Nullam vel aliquet odio. Etiam porttitor nisl id iaculis congue. Curabitur mattis scelerisque
@@ -327,7 +342,7 @@
         </div>
         <div class="faq-section">
             <div class="faq-column">
-                <button class="accordion-button">How to Find NFTs on Binance NFT Marketplace</button>
+                <div class="accordion-button">How to Find NFTs on Binance NFT Marketplace</div>
                 <div class="panel-content">
                     <p>You can search through the wide variety of NFTs on our marketplace in four ways:</p>
                     <ul>
@@ -337,7 +352,7 @@
                         <li>Search for NFTs by interest using specific keywords.</li>
                     </ul>
                 </div>
-                <button class="accordion-button">How do I sell an NFT?</button>
+                <div class="accordion-button">How do I sell an NFT?</div>
                 <div class="panel-content">
                     <p>All NFT assets on Binance NFT are discoverable even if they’re not listed for sale. You can list and sell your NFTs and Mystery Boxes in three ways.</p>
                     <ul>
@@ -346,13 +361,13 @@
                         <li>Accept an Offer: You can accept offers from buyers on fixed-price NFTs and Mystery Boxes.</li>
                     </ul>
                 </div>
-                <button class="accordion-button">How do I Deposit an NFT?</button>
+                <div class="accordion-button">How do I Deposit an NFT?</div>
                 <div class="panel-content">
                     <p>On your Binance NFT [Profile], click [Deposit]. Connect your wallet and choose the network of your wallet. Next, select the NFTs/NFT collections you want to deposit to Binance in the connected wallet and click [Deposit Now].</p>
                 </div>
             </div>
             <div class="faq-column">
-                <button class="accordion-button">How do I buy an NFT?</button>
+                <div class="accordion-button">How do I buy an NFT?</div>
                 <div class="panel-content">
                     <p>You can buy NFTs and Mystery Boxes on the Binance NFT Marketplace in three ways.</p>
                     <ul>
@@ -361,7 +376,7 @@
                         <li>Make an Offer: Make offers to the seller on fixed-price NFTs and Mystery Boxes by clicking</li>
                     </ul>
                 </div>
-                <button class="accordion-button">What are the NFT Transaction Fees on Binance?</button>
+                <div class="accordion-button">What are the NFT Transaction Fees on Binance?</div>
                 <div class="panel-content">
                     <p>Transaction fees may apply when you mint, trade, deposit, withdraw, create, and burn NFTs on the Binance NFT marketplace. These transaction fees are calculated based on various factors, which include market conditions and network status.</p>
                 </div>
@@ -504,6 +519,40 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+        breakpoints: {
+        0: {
+            slidesPerView: 1.6,
+            centeredSlides: false,
+            spaceBetween: 16,
+            allowTouchMove: true,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            allowTouchMove: false,
+        },
+        },
+    });
+    window.addEventListener('resize', () => {
+        swiper.update();
+
+        if (window.innerWidth >= 768) {
+            swiper.allowTouchMove = false;
+            
+        } else {
+            swiper.allowTouchMove = true;
+        }
+    })
+    </script>
+
     <script>
         const toggles = document.querySelectorAll('.theme');
         toggles.forEach(btn => {
@@ -563,7 +612,6 @@
                 item.style.display = pair.includes(keyword) ? "flex" : "none";
             });
         });
-
     </script>
     <script>
         const closeBtn = document.querySelector('.close');
@@ -582,11 +630,16 @@
     </script>
     <script>
         document.querySelectorAll('.accordion-button').forEach(btn => {
-            btn.onclick = () => {
-                btn.classList.toggle('active');
-                const panel = btn.nextElementSibling;
-                panel.classList.toggle('open');
-            };
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.accordion-button').forEach(otherBtn => {
+                    if (otherBtn !== btn) {
+                        otherBtn.classList.remove('active')
+                        otherBtn.nextElementSibling.classList.remove('open');
+                    }
+                });
+                btn.classList.toggle('active')
+                btn.nextElementSibling.classList.toggle('open');
+            });
         });
     </script>
     <script>
