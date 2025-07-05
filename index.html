@@ -335,6 +335,85 @@
             <div class="close">✕</div>
         </div>
     </div>
+    <div class="product-slider">
+        <div class="product-title">Features</div>
+        <div class="swiper product-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card-scaler">
+                    <div class="product-card">
+                        <div class="card-gradient"></div>
+                        <div class="card-logo-wrapper">
+                            <img src="cardLogo1.webp" alt="logo" class="card-logo">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                Forever To The Moon MysteryBox
+                                <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="volume">Volume <b>--</b></div>
+                                <div class="floor-price">Floor Price <b>--</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card-scaler">
+                    <div class="product-card">
+                        <div class="card-gradient"></div>
+                        <div class="card-logo-wrapper">
+                            <img src="cardLogo2.webp" alt="logo" class="card-logo">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                ForeverSkills: Premium
+                                <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="volume">Volume <b>26.1K USD</b></div>
+                                <div class="floor-price">Floor Price <b>194.9 USD</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card-scaler">
+                    <div class="product-card">
+                        <div class="card-gradient"></div>
+                        <div class="card-logo-wrapper">
+                            <img src="cardLogo3.webp" alt="logo" class="card-logo">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                Featured Content
+                                <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="volume">Volume <b>100 $</b></div>
+                                <div class="floor-price">Floor Price <b>199 $</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card-scaler">
+                    <div class="product-card">
+                        <div class="card-gradient"></div>
+                        <div class="card-logo-wrapper">
+                            <img src="cardLogo4.webp" alt="logo" class="card-logo">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                Featured By Nature
+                                <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                            </div>
+                            <div class="card-info">
+                                <div class="volume">Volume <b>50 $</b></div>
+                                <div class="floor-price">Floor Price <b>--</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
     <div class="faq-wrapper">
         <div class="faq-header">
             <h2>FAQ</h2>
@@ -520,6 +599,31 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.product-container', {
+            slidesPerView: 3, 
+            spaceBetween: 10,
+            centeredSlides: false,
+            direction: 'horizontal',
+            loop: true, 
+            autoplay: {
+                delay: 3000, 
+                disableOnInteraction: false, 
+                pauseOnMouseEnter: true,
+                reverseDirection: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+                0: {
+                    slidesPerView: 2, 
+                }
+            }
+        });
+    });
+    </script>>
     <script>
     const swiper = new Swiper('.swiper', {
         loop: true,
