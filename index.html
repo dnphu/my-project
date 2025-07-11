@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');    
+    }
+    </script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -157,8 +164,8 @@
                     </ul>
                     </div>
                 </div>
-                <a href="#" class="btn-login">Log In</a>
-                <a href="#" class="btn-signup">Sign Up</a>
+                <a href="login.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
                 <a href="#" class="icon-button">
                     <i class="fa-solid fa-globe"></i>
                 </a>
@@ -177,8 +184,8 @@
             <a href="#" class="icon-button">
                 <i class="fa-solid fa-globe"></i>
             </a>
-            <a href="#" class="btn-login">Log In</a>
-            <a href="#" class="btn-signup">Sign Up</a>
+            <a href="login.html" class="btn-login">Log In</a>
+            <a href="signup.html" class="btn-signup">Sign Up</a>
             <a class="icon-button theme">
                 <i class="fas fa-sun icon-light"></i>
                 <i class="fas fa-moon icon-dark"></i>
@@ -662,6 +669,8 @@
         toggles.forEach(btn => {
             btn.addEventListener('click', () => {
                 document.body.classList.toggle('dark-mode');
+                const isDark = document.body.classList.contains('dark-mode');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
             });
         });
 
