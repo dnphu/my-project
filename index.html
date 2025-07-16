@@ -10,7 +10,7 @@
         document.documentElement.classList.add('dark-mode');    
     }
     </script>
-
+    <script src="mock-data.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -294,6 +294,43 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
+    <div class="nft-table-box">
+    <div class="nft-filter-container">
+        <div class="nft-filter-tab">
+        <button data-tab="trending" class="active">Trending</button>
+        <button data-tab="top">Top</button>
+        </div>
+        <div class="nft-filter-time">
+        <button data-time="1H">1H</button>
+        <button data-time="6H">6H</button>
+        <button data-time="24H" class="active">24H</button>
+        <button data-time="7D">7D</button>
+        </div>
+    </div>
+
+    <div class="nft-scroll-wrapper">
+        <div class="nft-table-wrapper">
+        <div class="nft-table-column">
+            <div class="nft-table-header">
+            <span class="col-name">Collections</span>
+            <span class="col-floor">Floor Price</span>
+            <span class="col-volume">Volume</span>
+            </div>
+            <div id="left-column"></div>
+        </div>
+        <div class="nft-table-column">
+            <div class="nft-table-header">
+            <span class="col-name">Collections</span>
+            <span class="col-floor">Floor Price</span>
+            <span class="col-volume">Volume</span>
+            </div>
+            <div id="right-column"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
     <div class="background-text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet nisl vitae quam semper aliquam quis sit
             amet leo. Nullam vel aliquet odio. Etiam porttitor nisl id iaculis congue. Curabitur mattis scelerisque
@@ -742,27 +779,59 @@
         });
     </script>
     <script>
-        document.querySelectorAll('.accordion-button').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.accordion-button').forEach(otherBtn => {
-                    if (otherBtn !== btn) {
-                        otherBtn.classList.remove('active')
-                        otherBtn.nextElementSibling.classList.remove('open');
-                    }
-                });
-                btn.classList.toggle('active')
-                btn.nextElementSibling.classList.toggle('open');
-            });
-        });
-    </script>
-    <script>
-        document.querySelectorAll('.footer-item h3').forEach(header => {
-        header.addEventListener('click', () => {
-        const parent = header.closest('.footer-item');
-        parent.classList.toggle('open');
-        });
+    let selectedTab = "trending";
+    let selectedTime = "24H";
+
+    document.querySelectorAll(".nft-filter-tab button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        selectedTab = btn.dataset.tab;
+        document.querySelectorAll(".nft-filter-tab button").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        renderNFTList();
+      });
     });
-    </script>
+
+    document.querySelectorAll(".nft-filter-time button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        selectedTime = btn.dataset.time;
+        document.querySelectorAll(".nft-filter-time button").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        renderNFTList();
+      });
+    });
+    function renderNFTList() {
+      const list = nftList[selectedTab];
+      const mid = Math.ceil(list.length / 2);
+      document.getElementById("left-column").innerHTML = "";
+      document.getElementById("right-column").innerHTML = "";
+      list.forEach((item, i) => {
+        const col = i < mid ? "left-column" : "right-column";
+        document.getElementById(col).innerHTML += `
+          <div class="nft-row">
+            <div class="nft-name">
+              <span style="color: orange;">${item.rank}</span>
+              <img src="${item.logo}" class="collections-logo" />
+              <span>${item.name}</span>
+            </div>
+            <div class="nft-cell">
+              <div>${item.floor[selectedTime]}</div>
+              <div class="${item.floorChange[selectedTime].includes('+') ? 'green' : 'red'}">
+                ${item.floorChange[selectedTime]}
+              </div>
+            </div>
+            <div class="nft-cell">
+              <div>${item.volume[selectedTime]}</div>
+              <div class="${item.volumeChange[selectedTime].includes('+') ? 'green' : 'red'}">
+                ${item.volumeChange[selectedTime]}
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    renderNFTList();
+</script>
 
 </body>
 
