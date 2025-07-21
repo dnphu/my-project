@@ -17,822 +17,632 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-container">
-            <img src="brand-image.png" alt="Logo" class="logo" />
-            <div class="mobile-menu-toggle">
-                <span class="icon-menu">☰</span>
-                <span class="icon-close">✕</span>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header-container">
+                <img src="brand-image.png" alt="Logo" class="logo" />
+                <div class="mobile-menu-toggle">
+                    <span class="icon-menu">☰</span>
+                    <span class="icon-close">✕</span>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu"><a href="https://www.binance.com/en">Buy Crypto</a></li>
+                    <li class="menu"><a href="#">Markets</a></li>
+                    <li class="menu-mega">
+                        <a href="https://www.binance.com/en">Trade
+                        <span class="arrow">▼</span> 
+                        </a>
+                        <div class="menu-mega-dropdown">
+                            <div class="menu-mega-column">
+                                <h4 class="menu-heading">Basic</h4>
+                                <a class="menu-mega-item">
+                                    <img src="Spot.png" alt="Spot" class="item-icon" />
+                                    <div>
+                                        <div class="item-title">Spot</div>
+                                        <div class="item-desc">Buy and sell</div>
+                                    </div>
+                                </a>
+                                <a class="menu-mega-item">
+                                    <img src="margin.png" alt="Margin" class="item-icon" />
+                                    <div>
+                                        <div class="item-title">Margin</div>
+                                        <div class="item-desc">Increase your profits</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="menu-mega-column">
+                                <h4 class="menu-heading">Advanced</h4>
+                                <a class="menu-mega-item">
+                                    <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                                    <div>
+                                        <div class="item-title">Alpha</div>
+                                        <div class="item-desc">Quick access</div>
+                                    </div>
+                                </a>
+                                <a class="menu-mega-item">
+                                    <img src="trade.png" alt="Trading bots" class="item-icon" />
+                                    <div>
+                                        <div class="item-title">Trading bots</div>
+                                        <div class="item-desc">Trade smarter</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-mega">
+                        <a href="#">Earn 
+                        <span class="arrow">▼</span>
+                        </a>
+                        <div class="menu-mega-dropdown">
+                            <div class="menu-mega-column">
+                                <h4 class="menu-heading">Basic</h4>
+                                <a class="menu-mega-item">
+                                    <img src="Spot.png" alt="Spot" class="item-icon" />
+                                    <div>
+                                        <div class="item-title">Overview</div>
+                                        <div class="item-desc">One-stop</div>
+                                    </div>
+                                </a>
+                                <a class="menu-mega-item">
+                                    <img src="margin.png" alt="Margin" class="item-icon" />
+                                    <div>
+                                        <div class="item-title">Simple earn</div>
+                                        <div class="item-desc">Earn passive income</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="menu-mega-column">
+                                <h4 class="menu-heading">Advanced</h4>
+                                <a class="menu-mega-item">
+                                    <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                                    <div>
+                                        <div class="item-title">Advanced Earn</div>
+                                        <div class="item-desc">Maximize your returns </div>
+                                    </div>
+                                </a>
+                                <a class="menu-mega-item">
+                                    <img src="trade.png" alt="Trading bots" class="item-icon" />
+                                    <div>
+                                        <div class="item-title">Trading bots</div>
+                                        <div class="item-desc">Trade smarter</div>
+                                    </div>
+                                </a>
+                                <a class="menu-mega-item">
+                                    <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                                    <div>
+                                        <div class="item-title">Alpha</div>
+                                        <div class="item-desc">Quick access</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="header-button">
+                    <a href="#" id="searchIcon" class="icon-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <div id="search-container" class="search-container hidden">
+                        <div class="search-row">
+                            <div class="search-box">
+                                <span class="fa fa-search search-icon"></span>
+                                <input type="text" id="mainSearchInput" placeholder="Search for..." class="search-input" />
+                                <button id="clearButton" class="clear-button"><i class="fa-solid fa-circle-xmark"></i></button>
+                            </div>
+                            <button id="cancelButton" class="cancel-button">Cancel</button>
+                        </div>
+                        <div class="hot-trading">
+                        <h3>Hot Trading</h3>
+                        <ul class="trending-list">
+                            <li>
+                            <span class="rank">1</span>
+                            <img src="btc.png" alt="BTC" class="brand-icon" />
+                            <span class="pair">BTC/USDT</span>
+                            </li>
+                            <li>
+                            <span class="rank">2</span>
+                            <img src="eth.png" alt="ETH" class="brand-icon" />
+                            <span class="pair">ETH/USDT</span>
+                            </li>
+                            <li>
+                            <span class="rank">3</span>
+                            <img src="sol.png" alt="SOL" class="brand-icon" />
+                            <span class="pair">SOL/USDT</span>
+                            </li>
+                            <li>
+                            <span class="rank">4</span>
+                            <img src="xrp.png" alt="XRP" class="brand-icon" />
+                            <span class="pair">XRP/USDT</span>
+                            </li>
+                            <li>
+                            <span class="rank">5</span>
+                            <img src="doge.png" alt="DOGE" class="brand-icon" />
+                            <span class="pair">DOGE/USDT</span>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <a href="login.html" class="btn-login">Log In</a>
+                    <a href="signup.html" class="btn-signup">Sign Up</a>
+                    <a href="#" class="icon-button">
+                        <i class="fa-solid fa-globe"></i>
+                    </a>
+                    <a class="icon-button theme">
+                        <i class="fas fa-sun icon-light"></i>
+                        <i class="fas fa-moon icon-dark"></i>
+                    </a>
+                </div>
             </div>
-            <ul class="menu-list">
-                <li class="menu"><a href="https://www.binance.com/en">Buy Crypto</a></li>
-                <li class="menu"><a href="#">Markets</a></li>
-                <li class="menu-mega">
-                    <a href="https://www.binance.com/en">Trade
-                    <span class="arrow">▼</span> 
-                    </a>
-                    <div class="menu-mega-dropdown">
-                        <div class="menu-mega-column">
-                            <h4 class="menu-heading">Basic</h4>
-                            <a class="menu-mega-item">
-                                <img src="Spot.png" alt="Spot" class="item-icon" />
-                                <div>
-                                    <div class="item-title">Spot</div>
-                                    <div class="item-desc">Buy and sell</div>
-                                </div>
-                            </a>
-                            <a class="menu-mega-item">
-                                <img src="margin.png" alt="Margin" class="item-icon" />
-                                <div>
-                                    <div class="item-title">Margin</div>
-                                    <div class="item-desc">Increase your profits</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="menu-mega-column">
-                            <h4 class="menu-heading">Advanced</h4>
-                            <a class="menu-mega-item">
-                                <img src="Alpha.png" alt="Alpha" class="item-icon" />
-                                <div>
-                                    <div class="item-title">Alpha</div>
-                                    <div class="item-desc">Quick access</div>
-                                </div>
-                            </a>
-                            <a class="menu-mega-item">
-                                <img src="trade.png" alt="Trading bots" class="item-icon" />
-                                <div>
-                                    <div class="item-title">Trading bots</div>
-                                    <div class="item-desc">Trade smarter</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-mega">
-                    <a href="#">Earn 
-                    <span class="arrow">▼</span>
-                    </a>
-                    <div class="menu-mega-dropdown">
-                        <div class="menu-mega-column">
-                            <h4 class="menu-heading">Basic</h4>
-                            <a class="menu-mega-item">
-                                <img src="Spot.png" alt="Spot" class="item-icon" />
-                                <div>
-                                    <div class="item-title">Overview</div>
-                                    <div class="item-desc">One-stop</div>
-                                </div>
-                            </a>
-                            <a class="menu-mega-item">
-                                <img src="margin.png" alt="Margin" class="item-icon" />
-                                <div>
-                                    <div class="item-title">Simple earn</div>
-                                    <div class="item-desc">Earn passive income</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="menu-mega-column">
-                            <h4 class="menu-heading">Advanced</h4>
-                            <a class="menu-mega-item">
-                                <img src="Alpha.png" alt="Alpha" class="item-icon" />
-                                <div>
-                                    <div class="item-title">Advanced Earn</div>
-                                    <div class="item-desc">Maximize your returns </div>
-                                </div>
-                            </a>
-                            <a class="menu-mega-item">
-                                <img src="trade.png" alt="Trading bots" class="item-icon" />
-                                <div>
-                                    <div class="item-title">Trading bots</div>
-                                    <div class="item-desc">Trade smarter</div>
-                                </div>
-                            </a>
-                            <a class="menu-mega-item">
-                                <img src="Alpha.png" alt="Alpha" class="item-icon" />
-                                <div>
-                                    <div class="item-title">Alpha</div>
-                                    <div class="item-desc">Quick access</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="header-button">
-                <a href="#" id="searchIcon" class="icon-button">
+        </header>
+        <div class="mobile-menu">
+            <div class="mobile-icon-group">
+                <a href="#" class="icon-button">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
-                <div id="search-container" class="search-container hidden">
-                    <div class="search-row">
-                        <div class="search-box">
-                            <span class="fa fa-search search-icon"></span>
-                            <input type="text" id="mainSearchInput" placeholder="Search for..." class="search-input" />
-                            <button id="clearButton" class="clear-button"><i class="fa-solid fa-circle-xmark"></i></button>
-                        </div>
-                        <button id="cancelButton" class="cancel-button">Cancel</button>
-                    </div>
-                    <div class="hot-trading">
-                    <h3>Hot Trading</h3>
-                    <ul class="trending-list">
-                        <li>
-                        <span class="rank">1</span>
-                        <img src="btc.png" alt="BTC" class="brand-icon" />
-                        <span class="pair">BTC/USDT</span>
-                        </li>
-                        <li>
-                        <span class="rank">2</span>
-                        <img src="eth.png" alt="ETH" class="brand-icon" />
-                        <span class="pair">ETH/USDT</span>
-                        </li>
-                        <li>
-                        <span class="rank">3</span>
-                        <img src="sol.png" alt="SOL" class="brand-icon" />
-                        <span class="pair">SOL/USDT</span>
-                        </li>
-                        <li>
-                        <span class="rank">4</span>
-                        <img src="xrp.png" alt="XRP" class="brand-icon" />
-                        <span class="pair">XRP/USDT</span>
-                        </li>
-                        <li>
-                        <span class="rank">5</span>
-                        <img src="doge.png" alt="DOGE" class="brand-icon" />
-                        <span class="pair">DOGE/USDT</span>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-                <a href="login.html" class="btn-login">Log In</a>
-                <a href="signup.html" class="btn-signup">Sign Up</a>
                 <a href="#" class="icon-button">
                     <i class="fa-solid fa-globe"></i>
                 </a>
+                <a href="login.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
                 <a class="icon-button theme">
                     <i class="fas fa-sun icon-light"></i>
                     <i class="fas fa-moon icon-dark"></i>
                 </a>
             </div>
-        </div>
-    </header>
-    <div class="mobile-menu">
-        <div class="mobile-icon-group">
-            <a href="#" class="icon-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-            <a href="#" class="icon-button">
-                <i class="fa-solid fa-globe"></i>
-            </a>
-            <a href="login.html" class="btn-login">Log In</a>
-            <a href="signup.html" class="btn-signup">Sign Up</a>
-            <a class="icon-button theme">
-                <i class="fas fa-sun icon-light"></i>
-                <i class="fas fa-moon icon-dark"></i>
-            </a>
-        </div>
-        <a href="https://www.binance.com/en">Buy Crypto</a>
-        <a href="#">Markets</a>
-        <div class="menu-mega-toggle">Trade <span class="arrow">▼</span></div>
-        <div class="menu-mega-dropdown">
-            <div class="menu-mega-column">
-                <h4 class="menu-heading">Basic</h4>
-                <a class="menu-mega-item">
-                    <img src="Spot.png" alt="Spot" class="item-icon" />
-                    <div>
-                        <div class="item-title">Spot</div>
-                        <div class="item-desc">Buy and sell</div>
-                    </div>
-                </a>
-                <a class="menu-mega-item">
-                    <img src="margin.png" alt="Margin" class="item-icon" />
-                    <div>
-                        <div class="item-title">Margin</div>
-                        <div class="item-desc">Increase your profits</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="menu-mega-column">
-                <h4 class="menu-heading">Advanced</h4>
-                <a class="menu-mega-item">
-                    <img src="Alpha.png" alt="Alpha" class="item-icon" />
-                    <div>
-                        <div class="item-title">Alpha</div>
-                        <div class="item-desc">Quick access</div>
-                    </div>
-                </a>
-                <a class="menu-mega-item">
-                    <img src="trade.png" alt="Trading bots" class="item-icon" />
-                    <div>
-                        <div class="item-title">Trading bots</div>
-                        <div class="item-desc">Trade smarter</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="menu-mega-toggle"> Earn <span class="arrow">▼</span> </div>
-        <div class="menu-mega-dropdown">
-            <div class="menu-mega-column">
-                <h4 class="menu-heading">Basic</h4>
-                <a class="menu-mega-item">
-                    <img src="Spot.png" alt="Spot" class="item-icon" />
-                    <div>
-                        <div class="item-title">Overview</div>
-                        <div class="item-desc">One-stop</div>
-                    </div>
-                </a>
-                <a class="menu-mega-item">
-                    <img src="margin.png" alt="Margin" class="item-icon" />
-                    <div>
-                        <div class="item-title">Simple earn</div>
-                        <div class="item-desc">Earn passive income</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="menu-mega-column">
-                <h4 class="menu-heading">Advanced</h4>
-                <a class="menu-mega-item">
-                    <img src="Alpha.png" alt="Alpha" class="item-icon" />
-                    <div>
-                        <div class="item-title">Advanced Earn</div>
-                        <div class="item-desc">Maximize your returns </div>
-                    </div>
-                </a>
-                <a class="menu-mega-item">
-                    <img src="trade.png" alt="Trading bots" class="item-icon" />
-                    <div>
-                        <div class="item-title">Trading bots</div>
-                        <div class="item-desc">Trade smarter</div>
-                    </div>
-                </a>
-                <a class="menu-mega-item">
-                    <img src="Alpha.png" alt="Alpha" class="item-icon" />
-                    <div>
-                        <div class="item-title">Alpha</div>
-                        <div class="item-desc">Quick access</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div class="slider-section">
-        <div class="slider-header">
-            <h2>One-stop platform for all things NFTs</h2>
-            <p>Trade, Stake and Loan NFTs securely on Binance NFT</p>
-        </div>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="nft1.webp" /></div>
-                <div class="swiper-slide"><img src="nft2.webp" /></div>
-                <div class="swiper-slide"><img src="nft3.webp" /></div>
-                <div class="swiper-slide"><img src="nft4.webp" /></div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-    <div class="nft-table-box">
-    <div class="nft-filter-container">
-        <div class="nft-filter-tab">
-        <button data-tab="trending" class="active">Trending</button>
-        <button data-tab="top">Top</button>
-        </div>
-        <div class="nft-filter-time">
-        <button data-time="1H">1H</button>
-        <button data-time="6H">6H</button>
-        <button data-time="24H" class="active">24H</button>
-        <button data-time="7D">7D</button>
-        </div>
-    </div>
-
-    <div class="nft-scroll-wrapper">
-        <div class="nft-table-wrapper">
-        <div class="nft-table-column">
-            <div class="nft-table-header">
-            <span class="col-name">Collections</span>
-            <span class="col-floor">Floor Price</span>
-            <span class="col-volume">Volume</span>
-            </div>
-            <div id="left-column"></div>
-        </div>
-        <div class="nft-table-column">
-            <div class="nft-table-header">
-            <span class="col-name">Collections</span>
-            <span class="col-floor">Floor Price</span>
-            <span class="col-volume">Volume</span>
-            </div>
-            <div id="right-column"></div>
-        </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="background-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet nisl vitae quam semper aliquam quis sit
-            amet leo. Nullam vel aliquet odio. Etiam porttitor nisl id iaculis congue. Curabitur mattis scelerisque
-            lectus, id facilisis enim dignissim at. Cras non ante a dui feugiat accumsan. Suspendisse potenti. Sed in
-            turpis vehicula, posuere nulla in, vestibulum magna. Sed lectus sem, semper at rhoncus sit amet, vehicula
-            vitae odio. Etiam id quam sollicitudin, vulputate nulla id, tincidunt enim. Donec rutrum luctus massa, ac
-            tincidunt elit pretium a. Nulla semper, lorem non malesuada dignissim, nulla erat fermentum sapien, sit amet
-            vestibulum ipsum risus vitae mauris. Quisque in sapien quis tellus pulvinar finibus rhoncus vitae lorem. Nam
-            posuere neque eget placerat dapibus. Nullam quis enim vitae diam bibendum rutrum. Nam in velit ac dolor
-            sagittis mattis. Praesent et odio tristique, mattis purus vel, tristique dolor. In accumsan neque nisi,
-            sagittis sagittis justo elementum tempus. Nam vitae purus massa. In sit amet enim tellus. Vestibulum vitae
-            cursus nisi, sed scelerisque nulla. Ut convallis ullamcorper ante, ut tempor lacus venenatis sed. Ut elit
-            ligula, sollicitudin sed massa ut, tincidunt semper dui. Nulla urna lacus, euismod id nulla in, aliquam
-            aliquet leo. Ut pellentesque velit a elit condimentum, eu lacinia tortor consectetur. Maecenas pulvinar urna
-            et lorem pellentesque posuere. In id elit quis ipsum pellentesque sodales. Nulla et leo vel elit volutpat
-            cursus. Proin lobortis, quam sit amet semper molestie, mauris sapien rutrum diam, a mollis ligula nisl a
-            purus. Etiam facilisis auctor sem, ac feugiat orci eleifend eget. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec quis dictum eros. Morbi consequat eros at purus laoreet condimentum. Aenean id nunc
-            ornare nibh sodales lacinia. Nullam laoreet, nulla mattis mattis rhoncus, ipsum tellus sodales tortor,
-            accumsan euismod diam lectus at enim. Praesent porta ultricies nisl nec ornare. Nulla hendrerit iaculis quam
-            quis aliquam. Donec pretium dapibus dui, a lacinia quam cursus eget. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia curae; Etiam lobortis, libero nec condimentum sodales, erat
-            nunc lobortis arcu, fermentum ultricies mauris diam eget felis. Sed eu ultrices nisi. Phasellus mollis
-            mattis magna, in malesuada libero lobortis vel. Donec convallis nisl sit amet arcu tincidunt auctor. Proin
-            feugiat vel libero non volutpat. Vivamus fermentum dolor sed justo tincidunt, eu pellentesque odio pulvinar.
-            Sed ultrices ante finibus condimentum viverra. Nulla scelerisque feugiat tellus, vitae aliquet arcu bibendum
-            id. Praesent vulputate quis turpis a bibendum. Sed nec mauris odio. Phasellus ac dolor a urna tristique
-            pellentesque. Nunc at magna luctus nisi scelerisque commodo. Proin ut odio quis arcu aliquet efficitur.
-            Aliquam facilisis ullamcorper dolor, vel sodales ligula sagittis vitae. Aliquam nec nisi lectus. Sed ut
-            lectus malesuada, gravida diam vel, viverra neque. Donec hendrerit odio ac iaculis viverra. Nullam at
-            iaculis mauris. Sed consectetur diam sollicitudin libero ultrices mattis. Nullam dapibus sollicitudin diam a
-            pretium. Morbi ultrices vel enim nec suscipit. Orci varius natoque penatibus et magnis dis parturient
-            montes, nascetur ridiculus mus. Nam porttitor, justo in ornare tristique, dolor nisl auctor elit, vel
-            finibus nisi leo sed metus. Integer varius nunc et eros eleifend, et malesuada tellus scelerisque. Phasellus
-            suscipit eu sapien sit amet aliquet. Ut venenatis mollis ipsum, ut fermentum massa consequat eget.</p>
-        <button class="button-open">popup</button>
-    </div>
-    <div class="overlay"></div>
-    <div class="box">
-        <div class="left">
-            <h2>interested in becoming a member?</h2>
-            <a href="https://www.google.com.vn/?hl=vi" class="button" target="_blank">membership</a>
-        </div>
-        <div class="img">
-            <img src="img.jpg" alt="Ảnh phòng gym" />
-            <div class="close">✕</div>
-        </div>
-    </div>
-    <div class="product-slider">
-        <div class="product-title">Features</div>
-        <div class="swiper product-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide card-scaler">
-                    <div class="product-card">
-                        <div class="card-gradient"></div>
-                        <div class="card-logo-wrapper">
-                            <img src="cardLogo1.webp" alt="logo" class="card-logo">
+            <a href="https://www.binance.com/en">Buy Crypto</a>
+            <a href="#">Markets</a>
+            <div class="menu-mega-toggle">Trade <span class="arrow">▼</span></div>
+            <div class="menu-mega-dropdown">
+                <div class="menu-mega-column">
+                    <h4 class="menu-heading">Basic</h4>
+                    <a class="menu-mega-item">
+                        <img src="Spot.png" alt="Spot" class="item-icon" />
+                        <div>
+                            <div class="item-title">Spot</div>
+                            <div class="item-desc">Buy and sell</div>
                         </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                Forever To The Moon MysteryBox
-                                <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
-                            </div>
-                            <div class="card-info">
-                                <div class="volume">Volume <b>--</b></div>
-                                <div class="floor-price">Floor Price <b>--</b></div>
-                            </div>
+                    </a>
+                    <a class="menu-mega-item">
+                        <img src="margin.png" alt="Margin" class="item-icon" />
+                        <div>
+                            <div class="item-title">Margin</div>
+                            <div class="item-desc">Increase your profits</div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="swiper-slide card-scaler">
-                    <div class="product-card">
-                        <div class="card-gradient"></div>
-                        <div class="card-logo-wrapper">
-                            <img src="cardLogo2.webp" alt="logo" class="card-logo">
+
+                <div class="menu-mega-column">
+                    <h4 class="menu-heading">Advanced</h4>
+                    <a class="menu-mega-item">
+                        <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                        <div>
+                            <div class="item-title">Alpha</div>
+                            <div class="item-desc">Quick access</div>
                         </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                ForeverSkills: Premium
-                                <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                    </a>
+                    <a class="menu-mega-item">
+                        <img src="trade.png" alt="Trading bots" class="item-icon" />
+                        <div>
+                            <div class="item-title">Trading bots</div>
+                            <div class="item-desc">Trade smarter</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-mega-toggle"> Earn <span class="arrow">▼</span> </div>
+            <div class="menu-mega-dropdown">
+                <div class="menu-mega-column">
+                    <h4 class="menu-heading">Basic</h4>
+                    <a class="menu-mega-item">
+                        <img src="Spot.png" alt="Spot" class="item-icon" />
+                        <div>
+                            <div class="item-title">Overview</div>
+                            <div class="item-desc">One-stop</div>
+                        </div>
+                    </a>
+                    <a class="menu-mega-item">
+                        <img src="margin.png" alt="Margin" class="item-icon" />
+                        <div>
+                            <div class="item-title">Simple earn</div>
+                            <div class="item-desc">Earn passive income</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu-mega-column">
+                    <h4 class="menu-heading">Advanced</h4>
+                    <a class="menu-mega-item">
+                        <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                        <div>
+                            <div class="item-title">Advanced Earn</div>
+                            <div class="item-desc">Maximize your returns </div>
+                        </div>
+                    </a>
+                    <a class="menu-mega-item">
+                        <img src="trade.png" alt="Trading bots" class="item-icon" />
+                        <div>
+                            <div class="item-title">Trading bots</div>
+                            <div class="item-desc">Trade smarter</div>
+                        </div>
+                    </a>
+                    <a class="menu-mega-item">
+                        <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                        <div>
+                            <div class="item-title">Alpha</div>
+                            <div class="item-desc">Quick access</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-section">
+            <div class="slider-header">
+                <h2>One-stop platform for all things NFTs</h2>
+                <p>Trade, Stake and Loan NFTs securely on Binance NFT</p>
+            </div>
+            <div class="swiper top-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="nft1.webp" /></div>
+                    <div class="swiper-slide"><img src="nft2.webp" /></div>
+                    <div class="swiper-slide"><img src="nft3.webp" /></div>
+                    <div class="swiper-slide"><img src="nft4.webp" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="nft-table-box">
+        <div class="nft-filter-container">
+            <div class="nft-filter-tab">
+            <button data-tab="trending" class="active">Trending</button>
+            <button data-tab="top">Top</button>
+            </div>
+            <div class="nft-filter-time">
+            <button data-time="1H">1H</button>
+            <button data-time="6H">6H</button>
+            <button data-time="24H" class="active">24H</button>
+            <button data-time="7D">7D</button>
+            </div>
+        </div>
+
+        <div class="nft-scroll-wrapper">
+            <div class="nft-table-wrapper">
+            <div class="nft-table-column">
+                <div class="nft-table-header">
+                <span class="col-name">Collections</span>
+                <span class="col-floor">Floor Price</span>
+                <span class="col-volume">Volume</span>
+                </div>
+                <div id="left-column"></div>
+            </div>
+            <div class="nft-table-column">
+                <div class="nft-table-header">
+                <span class="col-name">Collections</span>
+                <span class="col-floor">Floor Price</span>
+                <span class="col-volume">Volume</span>
+                </div>
+                <div id="right-column"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="background-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet nisl vitae quam semper aliquam quis sit
+                amet leo. Nullam vel aliquet odio. Etiam porttitor nisl id iaculis congue. Curabitur mattis scelerisque
+                lectus, id facilisis enim dignissim at. Cras non ante a dui feugiat accumsan. Suspendisse potenti. Sed in
+                turpis vehicula, posuere nulla in, vestibulum magna. Sed lectus sem, semper at rhoncus sit amet, vehicula
+                vitae odio. Etiam id quam sollicitudin, vulputate nulla id, tincidunt enim. Donec rutrum luctus massa, ac
+                tincidunt elit pretium a. Nulla semper, lorem non malesuada dignissim, nulla erat fermentum sapien, sit amet
+                vestibulum ipsum risus vitae mauris. Quisque in sapien quis tellus pulvinar finibus rhoncus vitae lorem. Nam
+                posuere neque eget placerat dapibus. Nullam quis enim vitae diam bibendum rutrum. Nam in velit ac dolor
+                sagittis mattis. Praesent et odio tristique, mattis purus vel, tristique dolor. In accumsan neque nisi,
+                sagittis sagittis justo elementum tempus. Nam vitae purus massa. In sit amet enim tellus. Vestibulum vitae
+                cursus nisi, sed scelerisque nulla. Ut convallis ullamcorper ante, ut tempor lacus venenatis sed. Ut elit
+                ligula, sollicitudin sed massa ut, tincidunt semper dui. Nulla urna lacus, euismod id nulla in, aliquam
+                aliquet leo. Ut pellentesque velit a elit condimentum, eu lacinia tortor consectetur. Maecenas pulvinar urna
+                et lorem pellentesque posuere. In id elit quis ipsum pellentesque sodales. Nulla et leo vel elit volutpat
+                cursus. Proin lobortis, quam sit amet semper molestie, mauris sapien rutrum diam, a mollis ligula nisl a
+                purus. Etiam facilisis auctor sem, ac feugiat orci eleifend eget. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Donec quis dictum eros. Morbi consequat eros at purus laoreet condimentum. Aenean id nunc
+                ornare nibh sodales lacinia. Nullam laoreet, nulla mattis mattis rhoncus, ipsum tellus sodales tortor,
+                accumsan euismod diam lectus at enim. Praesent porta ultricies nisl nec ornare. Nulla hendrerit iaculis quam
+                quis aliquam. Donec pretium dapibus dui, a lacinia quam cursus eget. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia curae; Etiam lobortis, libero nec condimentum sodales, erat
+                nunc lobortis arcu, fermentum ultricies mauris diam eget felis. Sed eu ultrices nisi. Phasellus mollis
+                mattis magna, in malesuada libero lobortis vel. Donec convallis nisl sit amet arcu tincidunt auctor. Proin
+                feugiat vel libero non volutpat. Vivamus fermentum dolor sed justo tincidunt, eu pellentesque odio pulvinar.
+                Sed ultrices ante finibus condimentum viverra. Nulla scelerisque feugiat tellus, vitae aliquet arcu bibendum
+                id. Praesent vulputate quis turpis a bibendum. Sed nec mauris odio. Phasellus ac dolor a urna tristique
+                pellentesque. Nunc at magna luctus nisi scelerisque commodo. Proin ut odio quis arcu aliquet efficitur.
+                Aliquam facilisis ullamcorper dolor, vel sodales ligula sagittis vitae. Aliquam nec nisi lectus. Sed ut
+                lectus malesuada, gravida diam vel, viverra neque. Donec hendrerit odio ac iaculis viverra. Nullam at
+                iaculis mauris. Sed consectetur diam sollicitudin libero ultrices mattis. Nullam dapibus sollicitudin diam a
+                pretium. Morbi ultrices vel enim nec suscipit. Orci varius natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus. Nam porttitor, justo in ornare tristique, dolor nisl auctor elit, vel
+                finibus nisi leo sed metus. Integer varius nunc et eros eleifend, et malesuada tellus scelerisque. Phasellus
+                suscipit eu sapien sit amet aliquet. Ut venenatis mollis ipsum, ut fermentum massa consequat eget.</p>
+            <button class="button-open">popup</button>
+        </div>
+        <div class="overlay"></div>
+        <div class="box">
+            <div class="left">
+                <h2>interested in becoming a member?</h2>
+                <a href="https://www.google.com.vn/?hl=vi" class="button" target="_blank">membership</a>
+            </div>
+            <div class="img">
+                <img src="img.jpg" alt="Ảnh phòng gym" />
+                <div class="close">✕</div>
+            </div>
+        </div>
+        <div class="product-slider">
+            <div class="product-title">Features</div>
+            <div class="swiper product-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide card-scaler">
+                        <div class="product-card">
+                            <div class="card-gradient"></div>
+                            <div class="card-logo-wrapper">
+                                <img src="cardLogo1.webp" alt="logo" class="card-logo">
                             </div>
-                            <div class="card-info">
-                                <div class="volume">Volume <b>26.1K USD</b></div>
-                                <div class="floor-price">Floor Price <b>194.9 USD</b></div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    Forever To The Moon MysteryBox
+                                    <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="volume">Volume <b>--</b></div>
+                                    <div class="floor-price">Floor Price <b>--</b></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide card-scaler">
-                    <div class="product-card">
-                        <div class="card-gradient"></div>
-                        <div class="card-logo-wrapper">
-                            <img src="cardLogo3.webp" alt="logo" class="card-logo">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                Featured Content
-                                <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                    <div class="swiper-slide card-scaler">
+                        <div class="product-card">
+                            <div class="card-gradient"></div>
+                            <div class="card-logo-wrapper">
+                                <img src="cardLogo2.webp" alt="logo" class="card-logo">
                             </div>
-                            <div class="card-info">
-                                <div class="volume">Volume <b>100 $</b></div>
-                                <div class="floor-price">Floor Price <b>199 $</b></div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    ForeverSkills: Premium
+                                    <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="volume">Volume <b>26.1K USD</b></div>
+                                    <div class="floor-price">Floor Price <b>194.9 USD</b></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-scaler">
+                        <div class="product-card">
+                            <div class="card-gradient"></div>
+                            <div class="card-logo-wrapper">
+                                <img src="cardLogo3.webp" alt="logo" class="card-logo">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    Featured Content
+                                    <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="volume">Volume <b>100 $</b></div>
+                                    <div class="floor-price">Floor Price <b>199 $</b></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card-scaler">
+                        <div class="product-card">
+                            <div class="card-gradient"></div>
+                            <div class="card-logo-wrapper">
+                                <img src="cardLogo4.webp" alt="logo" class="card-logo">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    Featured By Nature
+                                    <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
+                                </div>
+                                <div class="card-info">
+                                    <div class="volume">Volume <b>50 $</b></div>
+                                    <div class="floor-price">Floor Price <b>--</b></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide card-scaler">
-                    <div class="product-card">
-                        <div class="card-gradient"></div>
-                        <div class="card-logo-wrapper">
-                            <img src="cardLogo4.webp" alt="logo" class="card-logo">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                Featured By Nature
-                                <span class="card-icon"><i class="fa-solid fa-bell" style="color: #f0b90b;"></i></span>
-                            </div>
-                            <div class="card-info">
-                                <div class="volume">Volume <b>50 $</b></div>
-                                <div class="floor-price">Floor Price <b>--</b></div>
-                            </div>
-                        </div>
+            </div>    
+        </div>
+        <div class="faq-wrapper">
+            <div class="faq-header">
+                <h2>FAQ</h2>
+                <a class="faq-link" href="#">ALL FAQ →</a>
+            </div>
+            <div class="faq-section">
+                <div class="faq-column">
+                    <div class="accordion-button">How to Find NFTs on Binance NFT Marketplace</div>
+                    <div class="panel-content">
+                        <p>You can search through the wide variety of NFTs on our marketplace in four ways:</p>
+                        <ul>
+                            <li>Find the latest drops from cross-chain NFT listings on the Marketplace.</li>
+                            <li>Narrow your NFT search in a variety of ways using our new filters.</li>
+                            <li>View popular NFTs through the leaderboards to find NFTs based on specific metrics.</li>
+                            <li>Search for NFTs by interest using specific keywords.</li>
+                        </ul>
+                    </div>
+                    <div class="accordion-button">How do I sell an NFT?</div>
+                    <div class="panel-content">
+                        <p>All NFT assets on Binance NFT are discoverable even if they’re not listed for sale. You can list and sell your NFTs and Mystery Boxes in three ways.</p>
+                        <ul>
+                            <li>Fixed Price: Set a fixed price for your NFT on the listing page, which will allow buyers to purchase your NFT instantly with the price you set.</li>
+                            <li>Auction: Click [Highest Bid] on the listing page.</li>
+                            <li>Accept an Offer: You can accept offers from buyers on fixed-price NFTs and Mystery Boxes.</li>
+                        </ul>
+                    </div>
+                    <div class="accordion-button">How do I Deposit an NFT?</div>
+                    <div class="panel-content">
+                        <p>On your Binance NFT [Profile], click [Deposit]. Connect your wallet and choose the network of your wallet. Next, select the NFTs/NFT collections you want to deposit to Binance in the connected wallet and click [Deposit Now].</p>
+                    </div>
+                </div>
+                <div class="faq-column">
+                    <div class="accordion-button">How do I buy an NFT?</div>
+                    <div class="panel-content">
+                        <p>You can buy NFTs and Mystery Boxes on the Binance NFT Marketplace in three ways.</p>
+                        <ul>
+                            <li>Fixed Price: Click the [Buy Now] button on the product page and complete the transaction.</li>
+                            <li>Auction: Click [Place a Bid] to enter your bid price and confirm the offer.</li>
+                            <li>Make an Offer: Make offers to the seller on fixed-price NFTs and Mystery Boxes by clicking</li>
+                        </ul>
+                    </div>
+                    <div class="accordion-button">What are the NFT Transaction Fees on Binance?</div>
+                    <div class="panel-content">
+                        <p>Transaction fees may apply when you mint, trade, deposit, withdraw, create, and burn NFTs on the Binance NFT marketplace. These transaction fees are calculated based on various factors, which include market conditions and network status.</p>
                     </div>
                 </div>
             </div>
-        </div>    
+            <div class="faq-footer">
+                <div class="faq-contact">
+                    Please contact us if you have any specific idea or request.
+                    <span class="email-icon"><i class="fa-solid fa-envelope"></i></span>
+                    <a href="mailto:myproject.com">myproject.com</a>
+                </div>
+                <div class="faq-community">
+                    Community
+                    <span class="email-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-grid">
+            <div class="footer-column">
+                <h3>Community</h3>
+                <div class="social-icon">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-reddit"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fas fa-chart-line"></i></a> 
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+                <div class="footer-settings">
+                    <p><i class="fas fa-globe"></i> English</p>
+                    <p><i class="fas fa-dollar-sign"></i> USD-$</p>
+                    <p>Theme 
+                    <a class="icon-button theme">
+                        <i class="fas fa-sun icon-light"></i>
+                        <i class="fas fa-moon icon-dark"></i>
+                    </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-item">
+                <h3>About Us<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Building Trust</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Risk Warning</a></li>
+                    <li><a href="#">Notices</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Desktop Application</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-item">
+                <h3>Products<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+                <ul>
+                    <li><a href="#">Exchange</a></li>
+                    <li><a href="#">Buy Crypto</a></li>
+                    <li><a href="#">Pay</a></li>
+                    <li><a href="#">Academy</a></li>
+                    <li><a href="#">Live</a></li>
+                    <li><a href="#">Tax</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                    <li><a href="#">Launchpool</a></li>
+                    <li><a href="#">Auto-Invest</a></li>
+                    <li><a href="#">ETH Staking</a></li>
+                    <li><a href="#">NFT</a></li>
+                    <li><a href="#">BABT</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Charity</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-item">
+                <h3>Business<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+                <ul>
+                    <li><a href="#">P2P Merchant Application</a></li>
+                    <li><a href="#">P2Pro Merchant Application</a></li>
+                    <li><a href="#">Listing Application</a></li>
+                    <li><a href="#">Institutional & VIP Services</a></li>
+                    <li><a href="#">Labs</a></li>
+                    <li><a href="#">Binance Connect</a></li>
+                </ul>
+                </div>
+                <div class="footer-item">
+                <h3>Learn<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+                <ul>
+                    <li><a href="#">Learn & Earn</a></li>
+                    <li><a href="#">Browse Crypto Prices</a></li>
+                    <li><a href="#">Bitcoin Price</a></li>
+                    <li><a href="#">Ethereum Price</a></li>
+                    <li><a href="#">Crypto Price Predictions</a></li>
+                    <li><a href="#">Buy Bitcoin</a></li>
+                    <li><a href="#">Buy BNB</a></li>
+                    <li><a href="#">Buy XRP</a></li>
+                    <li><a href="#">Buy Ethereum</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-item">
+                <h3>Service<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+                <ul>
+                    <li><a href="#">Affiliate</a></li>
+                    <li><a href="#">Referral</a></li>
+                    <li><a href="#">BNB</a></li>
+                    <li><a href="#">OTC Trading</a></li>
+                    <li><a href="#">Historical Market Data</a></li>
+                    <li><a href="#">Trading Insight</a></li>
+                    <li><a href="#">Proof of Reserves</a></li>
+                </ul>
+                </div>
+                <div class="footer-item">
+                <h3>Support<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
+                <ul>
+                    <li><a href="#">24/7 Chat Support</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Product Feedback</a></li>
+                    <li><a href="#">Fees</a></li>
+                    <li><a href="#">APIs</a></li>
+                    <li><a href="#">Binance Verify</a></li>
+                    <li><a href="#">Airdrop Portal</a></li>
+                    <li><a href="#">Trading Rules</a></li>
+                </ul>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="faq-wrapper">
-        <div class="faq-header">
-            <h2>FAQ</h2>
-            <a class="faq-link" href="#">ALL FAQ →</a>
-        </div>
-        <div class="faq-section">
-            <div class="faq-column">
-                <div class="accordion-button">How to Find NFTs on Binance NFT Marketplace</div>
-                <div class="panel-content">
-                    <p>You can search through the wide variety of NFTs on our marketplace in four ways:</p>
-                    <ul>
-                        <li>Find the latest drops from cross-chain NFT listings on the Marketplace.</li>
-                        <li>Narrow your NFT search in a variety of ways using our new filters.</li>
-                        <li>View popular NFTs through the leaderboards to find NFTs based on specific metrics.</li>
-                        <li>Search for NFTs by interest using specific keywords.</li>
-                    </ul>
-                </div>
-                <div class="accordion-button">How do I sell an NFT?</div>
-                <div class="panel-content">
-                    <p>All NFT assets on Binance NFT are discoverable even if they’re not listed for sale. You can list and sell your NFTs and Mystery Boxes in three ways.</p>
-                    <ul>
-                        <li>Fixed Price: Set a fixed price for your NFT on the listing page, which will allow buyers to purchase your NFT instantly with the price you set.</li>
-                        <li>Auction: Click [Highest Bid] on the listing page.</li>
-                        <li>Accept an Offer: You can accept offers from buyers on fixed-price NFTs and Mystery Boxes.</li>
-                    </ul>
-                </div>
-                <div class="accordion-button">How do I Deposit an NFT?</div>
-                <div class="panel-content">
-                    <p>On your Binance NFT [Profile], click [Deposit]. Connect your wallet and choose the network of your wallet. Next, select the NFTs/NFT collections you want to deposit to Binance in the connected wallet and click [Deposit Now].</p>
-                </div>
-            </div>
-            <div class="faq-column">
-                <div class="accordion-button">How do I buy an NFT?</div>
-                <div class="panel-content">
-                    <p>You can buy NFTs and Mystery Boxes on the Binance NFT Marketplace in three ways.</p>
-                    <ul>
-                        <li>Fixed Price: Click the [Buy Now] button on the product page and complete the transaction.</li>
-                        <li>Auction: Click [Place a Bid] to enter your bid price and confirm the offer.</li>
-                        <li>Make an Offer: Make offers to the seller on fixed-price NFTs and Mystery Boxes by clicking</li>
-                    </ul>
-                </div>
-                <div class="accordion-button">What are the NFT Transaction Fees on Binance?</div>
-                <div class="panel-content">
-                    <p>Transaction fees may apply when you mint, trade, deposit, withdraw, create, and burn NFTs on the Binance NFT marketplace. These transaction fees are calculated based on various factors, which include market conditions and network status.</p>
-                </div>
-            </div>
-        </div>
-        <div class="faq-footer">
-            <div class="faq-contact">
-                Please contact us if you have any specific idea or request.
-                <span class="email-icon"><i class="fa-solid fa-envelope"></i></span>
-                <a href="mailto:myproject.com">myproject.com</a>
-            </div>
-            <div class="faq-community">
-                Community
-                <span class="email-icon"><i class="fa-solid fa-paper-plane"></i></span>
-            </div>
-        </div>
-    </div>
-    <footer class="footer-grid">
-        <div class="footer-column">
-            <h3>Community</h3>
-            <div class="social-icon">
-                <a href="#"><i class="fab fa-discord"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-x-twitter"></i></a>
-                <a href="#"><i class="fab fa-reddit"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fas fa-chart-line"></i></a> 
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
-            </div>
-            <div class="footer-settings">
-                <p><i class="fas fa-globe"></i> English</p>
-                <p><i class="fas fa-dollar-sign"></i> USD-$</p>
-                <p>Theme 
-                <a class="icon-button theme">
-                    <i class="fas fa-sun icon-light"></i>
-                    <i class="fas fa-moon icon-dark"></i>
-                </a>
-                </p>
-            </div>
-        </div>
-        <div class="footer-column">
-            <div class="footer-item">
-            <h3>About Us<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Legal</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Building Trust</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Risk Warning</a></li>
-                <li><a href="#">Notices</a></li>
-                <li><a href="#">Downloads</a></li>
-                <li><a href="#">Desktop Application</a></li>
-            </ul>
-            </div>
-        </div>
-        <div class="footer-column">
-            <div class="footer-item">
-            <h3>Products<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
-            <ul>
-                <li><a href="#">Exchange</a></li>
-                <li><a href="#">Buy Crypto</a></li>
-                <li><a href="#">Pay</a></li>
-                <li><a href="#">Academy</a></li>
-                <li><a href="#">Live</a></li>
-                <li><a href="#">Tax</a></li>
-                <li><a href="#">Gift Card</a></li>
-                <li><a href="#">Launchpool</a></li>
-                <li><a href="#">Auto-Invest</a></li>
-                <li><a href="#">ETH Staking</a></li>
-                <li><a href="#">NFT</a></li>
-                <li><a href="#">BABT</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Charity</a></li>
-            </ul>
-            </div>
-        </div>
-        <div class="footer-column">
-            <div class="footer-item">
-            <h3>Business<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
-            <ul>
-                <li><a href="#">P2P Merchant Application</a></li>
-                <li><a href="#">P2Pro Merchant Application</a></li>
-                <li><a href="#">Listing Application</a></li>
-                <li><a href="#">Institutional & VIP Services</a></li>
-                <li><a href="#">Labs</a></li>
-                <li><a href="#">Binance Connect</a></li>
-            </ul>
-            </div>
-            <div class="footer-item">
-            <h3>Learn<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
-            <ul>
-                <li><a href="#">Learn & Earn</a></li>
-                <li><a href="#">Browse Crypto Prices</a></li>
-                <li><a href="#">Bitcoin Price</a></li>
-                <li><a href="#">Ethereum Price</a></li>
-                <li><a href="#">Crypto Price Predictions</a></li>
-                <li><a href="#">Buy Bitcoin</a></li>
-                <li><a href="#">Buy BNB</a></li>
-                <li><a href="#">Buy XRP</a></li>
-                <li><a href="#">Buy Ethereum</a></li>
-            </ul>
-            </div>
-        </div>
-        <div class="footer-column">
-            <div class="footer-item">
-            <h3>Service<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
-            <ul>
-                <li><a href="#">Affiliate</a></li>
-                <li><a href="#">Referral</a></li>
-                <li><a href="#">BNB</a></li>
-                <li><a href="#">OTC Trading</a></li>
-                <li><a href="#">Historical Market Data</a></li>
-                <li><a href="#">Trading Insight</a></li>
-                <li><a href="#">Proof of Reserves</a></li>
-            </ul>
-            </div>
-            <div class="footer-item">
-            <h3>Support<span class="toggle-icon"><i class="fas fa-plus"></i></span></h3>
-            <ul>
-                <li><a href="#">24/7 Chat Support</a></li>
-                <li><a href="#">Support Center</a></li>
-                <li><a href="#">Product Feedback</a></li>
-                <li><a href="#">Fees</a></li>
-                <li><a href="#">APIs</a></li>
-                <li><a href="#">Binance Verify</a></li>
-                <li><a href="#">Airdrop Portal</a></li>
-                <li><a href="#">Trading Rules</a></li>
-            </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        new Swiper('.product-container', {
-            slidesPerView: 3, 
-            spaceBetween: 10,
-            centeredSlides: false,
-            direction: 'horizontal',
-            loop: true, 
-            autoplay: {
-                delay: 3000, 
-                disableOnInteraction: false, 
-                pauseOnMouseEnter: true,
-                reverseDirection: false,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                },
-                0: {
-                    slidesPerView: 2, 
-                }
-            }
-        });
-    });
-    </script>>
-    <script>
-    const swiper = new Swiper('.swiper', {
-        loop: true,
-        pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        },
-        breakpoints: {
-        0: {
-            slidesPerView: 1.6,
-            centeredSlides: false,
-            spaceBetween: 16,
-            allowTouchMove: true,
-        },
-        768: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            allowTouchMove: false,
-        },
-        },
-    });
-    window.addEventListener('resize', () => {
-        swiper.update();
-
-        if (window.innerWidth >= 768) {
-            swiper.allowTouchMove = false;
-            
-        } else {
-            swiper.allowTouchMove = true;
-        }
-    })
-    </script>
-
-    <script>
-        const toggles = document.querySelectorAll('.theme');
-        toggles.forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.body.classList.toggle('dark-mode');
-                const isDark = document.body.classList.contains('dark-mode');
-                localStorage.setItem('theme', isDark ? 'dark' : 'light');
-            });
-        });
-
-        const menuToggle = document.querySelector('.mobile-menu-toggle');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-
-        const megaToggles = document.querySelectorAll('.menu-mega-toggle');
-        megaToggles.forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                const dropdown = toggle.nextElementSibling;
-                const arrow = toggle.querySelector('.arrow');
-                dropdown.classList.toggle('active');
-                arrow.classList.toggle('rotated')
-            });
-        });
-    </script>
-    <script>
-        const searchContainer = document.getElementById("search-container");
-        const searchIcon = document.getElementById("searchIcon");
-        const searchInput = document.getElementById("mainSearchInput");
-        const clearButton = document.getElementById("clearButton");
-        const cancelButton = document.getElementById("cancelButton");
-
-        searchIcon.addEventListener("click", () => {
-        searchContainer.classList.toggle("hidden");
-        searchInput.focus();
-        });
-
-        clearButton.addEventListener("click", () => {
-        searchInput.value = "";
-        searchInput.focus();
-        });
-
-        cancelButton.addEventListener("click", () => {
-        searchContainer.classList.add("hidden");
-        searchInput.value = "";
-        });
-    </script>
-    <script>
-
-        const searchInput2 = document.getElementById("mainSearchInput");
-        const trendingItems = document.querySelectorAll(".trending-list li");
-
-        searchInput2.addEventListener("input", () => {
-            const keyword = searchInput2.value.toLowerCase();
-            trendingItems.forEach(item => {
-                const pair = item.querySelector(".pair").textContent.toLowerCase();
-                item.style.display = pair.includes(keyword) ? "flex" : "none";
-            });
-        });
-    </script>
-    <script>
-        const closeBtn = document.querySelector('.close');
-        const openBtn = document.querySelector('.button-open');
-        const box = document.querySelector('.box');
-        const overlay = document.querySelector('.overlay');
-
-        closeBtn.addEventListener('click', () => {
-            box.style.display = 'none';
-            overlay.style.display = 'none';
-        });
-        openBtn.addEventListener('click', () => {
-            box.style.display = 'flex';
-            overlay.style.display = 'block';
-        });
-    </script>
-    <script>
-    let selectedTab = "trending";
-    let selectedTime = "24H";
-
-    document.querySelectorAll(".nft-filter-tab button").forEach(btn => {
-      btn.addEventListener("click", () => {
-        selectedTab = btn.dataset.tab;
-        document.querySelectorAll(".nft-filter-tab button").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        renderNFTList();
-      });
-    });
-
-    document.querySelectorAll(".nft-filter-time button").forEach(btn => {
-      btn.addEventListener("click", () => {
-        selectedTime = btn.dataset.time;
-        document.querySelectorAll(".nft-filter-time button").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        renderNFTList();
-      });
-    });
-    function renderNFTList() {
-      const list = nftList[selectedTab];
-      const mid = Math.ceil(list.length / 2);
-      document.getElementById("left-column").innerHTML = "";
-      document.getElementById("right-column").innerHTML = "";
-      list.forEach((item, i) => {
-        const col = i < mid ? "left-column" : "right-column";
-        document.getElementById(col).innerHTML += `
-          <div class="nft-row">
-            <div class="nft-name">
-              <span style="color: orange;">${item.rank}</span>
-              <img src="${item.logo}" class="collections-logo" />
-              <span>${item.name}</span>
-            </div>
-            <div class="nft-cell">
-              <div>${item.floor[selectedTime]}</div>
-              <div class="${item.floorChange[selectedTime].includes('+') ? 'green' : 'red'}">
-                ${item.floorChange[selectedTime]}
-              </div>
-            </div>
-            <div class="nft-cell">
-              <div>${item.volume[selectedTime]}</div>
-              <div class="${item.volumeChange[selectedTime].includes('+') ? 'green' : 'red'}">
-                ${item.volumeChange[selectedTime]}
-              </div>
-            </div>
-          </div>
-        `;
-      });
-    }
-
-    renderNFTList();
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="common.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
