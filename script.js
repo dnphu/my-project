@@ -92,6 +92,20 @@ document.querySelectorAll(".nft-filter-time button").forEach(btn => {
     renderNFTList();
   });
 });
+
+document.querySelectorAll('.accordion-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.accordion-button').forEach(otherBtn => {
+            if (otherBtn !== btn) {
+                otherBtn.classList.remove('active')
+                otherBtn.nextElementSibling.classList.remove('open');
+            }
+        });
+        btn.classList.toggle('active')
+        btn.nextElementSibling.classList.toggle('open');
+    });
+});
+
 function renderNFTList() {
   const list = nftList[selectedTab];
   const mid = Math.ceil(list.length / 2);
