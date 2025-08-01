@@ -50,5 +50,6 @@ function initializeAllSliders() {
   window.addEventListener('resize', () => {
     swiper.update();
     swiper.allowTouchMove = window.innerWidth < 768;
+    console.log('Swiper updated on resize');
   });
 }

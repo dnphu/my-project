@@ -2,25 +2,25 @@
   font-family: "BinancePlex";
   font-style: normal;
   font-weight: 300;
-  src: url("Fonts/BinancePlex-Light.woff2") format("woff2");
+  src: url("../Fonts/BinancePlex-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: "BinancePlex";
   font-style: normal;
   font-weight: 400;
-  src: url("Fonts/BinancePlex-Regular.woff2") format("woff2");
+  src: url("../Fonts/BinancePlex-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "BinancePlex";
   font-style: normal;
   font-weight: 500;
-  src: url("Fonts/BinancePlex-Medium.woff2") format("woff2");
+  src: url("../Fonts/BinancePlex-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "BinancePlex";
   font-style: normal;
   font-weight: 600;
-  src: url("Fonts/BinancePlex-SemiBold.woff2") format("woff2");
+  src: url("../Fonts/BinancePlex-SemiBold.woff2") format("woff2");
 }
 
 body,
@@ -72,7 +72,7 @@ body.dark-mode {
   gap: 20px;
 }
 
-.mobile-menu-toggle {
+.js-mobile-toggle {
   display: none;
   font-size: 25px;
   cursor: pointer;
@@ -85,14 +85,15 @@ body.dark-mode {
   display: none;
   flex-direction: column;
   background-color: var(--bg-color);
-  position: absolute;
-  top: 70px;
+  position: fixed;
+  top: 80px;
   left: 0;
   width: 100%;
   z-index: 98;
   padding: 20px;
   gap: 10px;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .mobile-menu a {
@@ -178,11 +179,11 @@ body.dark-mode {
   color: var(--text-color);
 }
 
-.mobile-menu-toggle.active .icon-menu {
+.js-mobile-toggle.active .icon-menu {
   display: none;
 }
 
-.mobile-menu-toggle.active .icon-close {
+.js-mobile-toggle.active .icon-close {
   display: inline;
 }
 
@@ -282,7 +283,7 @@ body.dark-mode {
   font-size: 20px;
 }
 
-.icon-button#theme {
+.icon-button#js-theme {
   margin-right: 15px;
   margin-left: 5px;
 }
@@ -767,6 +768,9 @@ body.dark-mode .slider-section {
 }
 .swiper-slide {
   width: 350px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 .card-scaler {
   transform: scale(1);
@@ -790,7 +794,7 @@ body.dark-mode .slider-section {
 }
 .card-gradient {
   height: 60%;
-  background-image: url(cardGradient.jpg);
+  background-image: url("../image/cardGradient.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -884,7 +888,7 @@ body.dark-mode .slider-section {
   width: 48%;
   gap: 0;
 }
-.accordion-button {
+.js-accordion-button {
   background: none;
   border: none;
   padding: 20px 0;
@@ -899,7 +903,7 @@ body.dark-mode .slider-section {
   border-bottom: 1px solid #737b87;
   line-height: 24px;
 }
-.accordion-button::after {
+.js-accordion-button::after {
   content: "\25BC";
   position: absolute;
   right: 0;
@@ -909,7 +913,7 @@ body.dark-mode .slider-section {
   color: #707a8a;
   transition: transform 0.3s ease;
 }
-.accordion-button.active::after {
+.js-accordion-button.active::after {
   content: "\25B2";
 }
 .panel-content {
@@ -1083,7 +1087,7 @@ body.dark-mode .slider-section {
     display: none;
   }
 
-  .mobile-menu-toggle {
+  .js-mobile-toggle {
     display: block;
     margin-left: auto;
     margin-right: 20px;
@@ -1130,7 +1134,7 @@ body.dark-mode .slider-section {
   .menu-mega-item {
     margin: 0px;
   }
-  .menu-mega-toggle {
+  .js-menu-mega-toggle {
     font-weight: 500;
     cursor: pointer;
     margin-top: 10px;
@@ -1142,7 +1146,7 @@ body.dark-mode .slider-section {
     transform: rotate(180deg);
   }
 
-  .menu-mega-toggle .arrow {
+  .js-menu-mega-toggle .arrow {
     margin-left: auto;
   }
   .slider-header {
@@ -1194,7 +1198,7 @@ body.dark-mode .slider-section {
   .faq-section {
     flex-direction: column;
   }
-  .accordion-button {
+  .js-accordion-button {
     margin: 0 25px;
     width: 90%;
   }

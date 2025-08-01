@@ -9,29 +9,38 @@
         document.documentElement.classList.add('dark-mode');
       }
     </script>
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css" />
+    <title>Document</title> 
+    <link rel="stylesheet" href="../style/signup.css" />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="login-container">
     <div class="login-box">
-      <img src="brand-image.png" class="logo" />
-      <h2>Log in</h2>
+      <img src="../image/brand-image.png" class="logo" />
+      <h2>Welcome to Binance</h2>
 
       <label for="email">Email/Phone number</label>
       <input type="text" id="email" placeholder="Email/Phone" />
+      <div class="agreement">
+        <label class="checkbox-label">
+          <input type="checkbox" required />
+          <span>
+            By creating an account, I agree to
+            <a href="#">Binance's Terms of Service</a> and
+            <a href="#">Privacy Policy</a>.
+          </span>
+        </label>
+      </div>
 
       <div class="btn btn-yellow">Next</div>
 
       <div class="divider"><span>or</span></div>    
 
-      <div class="btn btn-gray"><i class="fa-solid fa-person"></i> Continue with Passkey</div>
       <div class="btn btn-gray"><i class="fa-brands fa-google"></i> Continue with Google</div>
       <div class="btn btn-gray"><i class="fa-brands fa-apple"></i> Continue with Apple</div>
       <div class="btn btn-gray"><i class="fa-brands fa-telegram"></i> Continue with Telegram</div>
 
-      <p class="create-account">Create a Binance Account</p>
+      <p class="create-account">Log in</p>
     </div>
   </div>
 

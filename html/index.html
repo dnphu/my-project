@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
-    const theme = localStorage.getItem('theme');
-    if (theme === 'dark') {
+    const jstheme = localStorage.getItem('js-theme');
+    if (jstheme === 'dark') {
         document.documentElement.classList.add('dark-mode');    
     }
     </script>
-    <script src="mock-data.js"></script>
+    <script src="../script/mock-data.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -20,8 +20,8 @@
     <div class="page-wrapper">
         <header class="header">
             <div class="header-container">
-                <img src="brand-image.png" alt="Logo" class="logo" />
-                <div class="mobile-menu-toggle">
+                <img src="../image/brand-image.png" alt="Logo" class="logo" />
+                <div class="js-mobile-toggle">
                     <span class="icon-menu">☰</span>
                     <span class="icon-close">✕</span>
                 </div>
@@ -36,14 +36,14 @@
                             <div class="menu-mega-column">
                                 <h4 class="menu-heading">Basic</h4>
                                 <a class="menu-mega-item">
-                                    <img src="Spot.png" alt="Spot" class="item-icon" />
+                                    <img src="../image/Spot.png" alt="Spot" class="item-icon" />
                                     <div>
                                         <div class="item-title">Spot</div>
                                         <div class="item-desc">Buy and sell</div>
                                     </div>
                                 </a>
                                 <a class="menu-mega-item">
-                                    <img src="margin.png" alt="Margin" class="item-icon" />
+                                    <img src="../image/margin.png" alt="Margin" class="item-icon" />
                                     <div>
                                         <div class="item-title">Margin</div>
                                         <div class="item-desc">Increase your profits</div>
@@ -54,14 +54,14 @@
                             <div class="menu-mega-column">
                                 <h4 class="menu-heading">Advanced</h4>
                                 <a class="menu-mega-item">
-                                    <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                                    <img src="../image/Alpha.png" alt="Alpha" class="item-icon" />
                                     <div>
                                         <div class="item-title">Alpha</div>
                                         <div class="item-desc">Quick access</div>
                                     </div>
                                 </a>
                                 <a class="menu-mega-item">
-                                    <img src="trade.png" alt="Trading bots" class="item-icon" />
+                                    <img src="../image/trade.png" alt="Trading bots" class="item-icon" />
                                     <div>
                                         <div class="item-title">Trading bots</div>
                                         <div class="item-desc">Trade smarter</div>
@@ -78,14 +78,14 @@
                             <div class="menu-mega-column">
                                 <h4 class="menu-heading">Basic</h4>
                                 <a class="menu-mega-item">
-                                    <img src="Spot.png" alt="Spot" class="item-icon" />
+                                    <img src="../image/Spot.png" alt="Spot" class="item-icon" />
                                     <div>
                                         <div class="item-title">Overview</div>
                                         <div class="item-desc">One-stop</div>
                                     </div>
                                 </a>
                                 <a class="menu-mega-item">
-                                    <img src="margin.png" alt="Margin" class="item-icon" />
+                                    <img src="../image/margin.png" alt="Margin" class="item-icon" />
                                     <div>
                                         <div class="item-title">Simple earn</div>
                                         <div class="item-desc">Earn passive income</div>
@@ -96,21 +96,21 @@
                             <div class="menu-mega-column">
                                 <h4 class="menu-heading">Advanced</h4>
                                 <a class="menu-mega-item">
-                                    <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                                    <img src="../image/Alpha.png" alt="Alpha" class="item-icon" />
                                     <div>
                                         <div class="item-title">Advanced Earn</div>
                                         <div class="item-desc">Maximize your returns </div>
                                     </div>
                                 </a>
                                 <a class="menu-mega-item">
-                                    <img src="trade.png" alt="Trading bots" class="item-icon" />
+                                    <img src="../image/trade.png" alt="Trading bots" class="item-icon" />
                                     <div>
                                         <div class="item-title">Trading bots</div>
                                         <div class="item-desc">Trade smarter</div>
                                     </div>
                                 </a>
                                 <a class="menu-mega-item">
-                                    <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                                    <img src="../image/Alpha.png" alt="Alpha" class="item-icon" />
                                     <div>
                                         <div class="item-title">Alpha</div>
                                         <div class="item-desc">Quick access</div>
@@ -139,27 +139,27 @@
                         <ul class="trending-list">
                             <li>
                             <span class="rank">1</span>
-                            <img src="btc.png" alt="BTC" class="brand-icon" />
+                            <img src="../image/btc.png" alt="BTC" class="brand-icon" />
                             <span class="pair">BTC/USDT</span>
                             </li>
                             <li>
                             <span class="rank">2</span>
-                            <img src="eth.png" alt="ETH" class="brand-icon" />
+                            <img src="../image/eth.png" alt="ETH" class="brand-icon" />
                             <span class="pair">ETH/USDT</span>
                             </li>
                             <li>
                             <span class="rank">3</span>
-                            <img src="sol.png" alt="SOL" class="brand-icon" />
+                            <img src="../image/sol.png" alt="SOL" class="brand-icon" />
                             <span class="pair">SOL/USDT</span>
                             </li>
                             <li>
                             <span class="rank">4</span>
-                            <img src="xrp.png" alt="XRP" class="brand-icon" />
+                            <img src="../image/xrp.png" alt="XRP" class="brand-icon" />
                             <span class="pair">XRP/USDT</span>
                             </li>
                             <li>
                             <span class="rank">5</span>
-                            <img src="doge.png" alt="DOGE" class="brand-icon" />
+                            <img src="../image/doge.png" alt="DOGE" class="brand-icon" />
                             <span class="pair">DOGE/USDT</span>
                             </li>
                         </ul>
@@ -170,14 +170,14 @@
                     <a href="#" class="icon-button">
                         <i class="fa-solid fa-globe"></i>
                     </a>
-                    <a class="icon-button theme">
+                    <a class="icon-button js-theme">
                         <i class="fas fa-sun icon-light"></i>
                         <i class="fas fa-moon icon-dark"></i>
                     </a>
                 </div>
             </div>
         </header>
-        <div class="mobile-menu">
+        <div class="js-mobile-menu">
             <div class="mobile-icon-group">
                 <a href="#" class="icon-button">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -187,26 +187,26 @@
                 </a>
                 <a href="login.html" class="btn-login">Log In</a>
                 <a href="signup.html" class="btn-signup">Sign Up</a>
-                <a class="icon-button theme">
+                <a class="icon-button js-theme">
                     <i class="fas fa-sun icon-light"></i>
                     <i class="fas fa-moon icon-dark"></i>
                 </a>
             </div>
             <a href="https://www.binance.com/en">Buy Crypto</a>
             <a href="#">Markets</a>
-            <div class="menu-mega-toggle">Trade <span class="arrow">▼</span></div>
+            <div class="js-menu-mega-toggle">Trade <span class="arrow">▼</span></div>
             <div class="menu-mega-dropdown">
                 <div class="menu-mega-column">
                     <h4 class="menu-heading">Basic</h4>
                     <a class="menu-mega-item">
-                        <img src="Spot.png" alt="Spot" class="item-icon" />
+                        <img src="../image/Spot.png" alt="Spot" class="item-icon" />
                         <div>
                             <div class="item-title">Spot</div>
                             <div class="item-desc">Buy and sell</div>
                         </div>
                     </a>
                     <a class="menu-mega-item">
-                        <img src="margin.png" alt="Margin" class="item-icon" />
+                        <img src="../image/margin.png" alt="Margin" class="item-icon" />
                         <div>
                             <div class="item-title">Margin</div>
                             <div class="item-desc">Increase your profits</div>
@@ -217,14 +217,14 @@
                 <div class="menu-mega-column">
                     <h4 class="menu-heading">Advanced</h4>
                     <a class="menu-mega-item">
-                        <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                        <img src="../image/Alpha.png" alt="Alpha" class="item-icon" />
                         <div>
                             <div class="item-title">Alpha</div>
                             <div class="item-desc">Quick access</div>
                         </div>
                     </a>
                     <a class="menu-mega-item">
-                        <img src="trade.png" alt="Trading bots" class="item-icon" />
+                        <img src="../image/trade.png" alt="Trading bots" class="item-icon" />
                         <div>
                             <div class="item-title">Trading bots</div>
                             <div class="item-desc">Trade smarter</div>
@@ -232,19 +232,19 @@
                     </a>
                 </div>
             </div>
-            <div class="menu-mega-toggle"> Earn <span class="arrow">▼</span> </div>
+            <div class="js-menu-mega-toggle"> Earn <span class="arrow">▼</span> </div>
             <div class="menu-mega-dropdown">
                 <div class="menu-mega-column">
                     <h4 class="menu-heading">Basic</h4>
                     <a class="menu-mega-item">
-                        <img src="Spot.png" alt="Spot" class="item-icon" />
+                        <img src="../image/Spot.png" alt="Spot" class="item-icon" />
                         <div>
                             <div class="item-title">Overview</div>
                             <div class="item-desc">One-stop</div>
                         </div>
                     </a>
                     <a class="menu-mega-item">
-                        <img src="margin.png" alt="Margin" class="item-icon" />
+                        <img src="../image/margin.png" alt="Margin" class="item-icon" />
                         <div>
                             <div class="item-title">Simple earn</div>
                             <div class="item-desc">Earn passive income</div>
@@ -255,21 +255,21 @@
                 <div class="menu-mega-column">
                     <h4 class="menu-heading">Advanced</h4>
                     <a class="menu-mega-item">
-                        <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                        <img src="../image/Alpha.png" alt="Alpha" class="item-icon" />
                         <div>
                             <div class="item-title">Advanced Earn</div>
                             <div class="item-desc">Maximize your returns </div>
                         </div>
                     </a>
                     <a class="menu-mega-item">
-                        <img src="trade.png" alt="Trading bots" class="item-icon" />
+                        <img src="../image/trade.png" alt="Trading bots" class="item-icon" />
                         <div>
                             <div class="item-title">Trading bots</div>
                             <div class="item-desc">Trade smarter</div>
                         </div>
                     </a>
                     <a class="menu-mega-item">
-                        <img src="Alpha.png" alt="Alpha" class="item-icon" />
+                        <img src="../image/Alpha.png" alt="Alpha" class="item-icon" />
                         <div>
                             <div class="item-title">Alpha</div>
                             <div class="item-desc">Quick access</div>
@@ -285,21 +285,21 @@
             </div>
             <div class="swiper top-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="nft1.webp" /></div>
-                    <div class="swiper-slide"><img src="nft2.webp" /></div>
-                    <div class="swiper-slide"><img src="nft3.webp" /></div>
-                    <div class="swiper-slide"><img src="nft4.webp" /></div>
+                    <div class="swiper-slide"><img src="../image/nft1.webp" /></div>
+                    <div class="swiper-slide"><img src="../image/nft2.webp" /></div>
+                    <div class="swiper-slide"><img src="../image/nft3.webp" /></div>
+                    <div class="swiper-slide"><img src="../image/nft4.webp" /></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
         <div class="nft-table-box">
         <div class="nft-filter-container">
-            <div class="nft-filter-tab">
+            <div class="js-nft-filter-tab">
             <button data-tab="trending" class="active">Trending</button>
             <button data-tab="top">Top</button>
             </div>
-            <div class="nft-filter-time">
+            <div class="js-nft-filter-time">
             <button data-time="1H">1H</button>
             <button data-time="6H">6H</button>
             <button data-time="24H" class="active">24H</button>
@@ -372,7 +372,7 @@
                 <a href="https://www.google.com.vn/?hl=vi" class="button" target="_blank">membership</a>
             </div>
             <div class="img">
-                <img src="img.jpg" alt="Ảnh phòng gym" />
+                <img src="../image/img.jpg" alt="Ảnh phòng gym" />
                 <div class="close">✕</div>
             </div>
         </div>
@@ -384,7 +384,7 @@
                         <div class="product-card">
                             <div class="card-gradient"></div>
                             <div class="card-logo-wrapper">
-                                <img src="cardLogo1.webp" alt="logo" class="card-logo">
+                                <img src="../image/cardLogo1.webp" alt="logo" class="card-logo">
                             </div>
                             <div class="card-content">
                                 <div class="card-title">
@@ -402,7 +402,7 @@
                         <div class="product-card">
                             <div class="card-gradient"></div>
                             <div class="card-logo-wrapper">
-                                <img src="cardLogo2.webp" alt="logo" class="card-logo">
+                                <img src="../image/cardLogo2.webp" alt="logo" class="card-logo">
                             </div>
                             <div class="card-content">
                                 <div class="card-title">
@@ -420,7 +420,7 @@
                         <div class="product-card">
                             <div class="card-gradient"></div>
                             <div class="card-logo-wrapper">
-                                <img src="cardLogo3.webp" alt="logo" class="card-logo">
+                                <img src="../image/cardLogo3.webp" alt="logo" class="card-logo">
                             </div>
                             <div class="card-content">
                                 <div class="card-title">
@@ -438,7 +438,7 @@
                         <div class="product-card">
                             <div class="card-gradient"></div>
                             <div class="card-logo-wrapper">
-                                <img src="cardLogo4.webp" alt="logo" class="card-logo">
+                                <img src="../image/cardLogo4.webp" alt="logo" class="card-logo">
                             </div>
                             <div class="card-content">
                                 <div class="card-title">
@@ -462,7 +462,7 @@
             </div>
             <div class="faq-section">
                 <div class="faq-column">
-                    <div class="accordion-button">How to Find NFTs on Binance NFT Marketplace</div>
+                    <div class="js-accordion-button">How to Find NFTs on Binance NFT Marketplace</div>
                     <div class="panel-content">
                         <p>You can search through the wide variety of NFTs on our marketplace in four ways:</p>
                         <ul>
@@ -472,7 +472,7 @@
                             <li>Search for NFTs by interest using specific keywords.</li>
                         </ul>
                     </div>
-                    <div class="accordion-button">How do I sell an NFT?</div>
+                    <div class="js-accordion-button">How do I sell an NFT?</div>
                     <div class="panel-content">
                         <p>All NFT assets on Binance NFT are discoverable even if they’re not listed for sale. You can list and sell your NFTs and Mystery Boxes in three ways.</p>
                         <ul>
@@ -481,13 +481,13 @@
                             <li>Accept an Offer: You can accept offers from buyers on fixed-price NFTs and Mystery Boxes.</li>
                         </ul>
                     </div>
-                    <div class="accordion-button">How do I Deposit an NFT?</div>
+                    <div class="js-accordion-button">How do I Deposit an NFT?</div>
                     <div class="panel-content">
                         <p>On your Binance NFT [Profile], click [Deposit]. Connect your wallet and choose the network of your wallet. Next, select the NFTs/NFT collections you want to deposit to Binance in the connected wallet and click [Deposit Now].</p>
                     </div>
                 </div>
                 <div class="faq-column">
-                    <div class="accordion-button">How do I buy an NFT?</div>
+                    <div class="js-accordion-button">How do I buy an NFT?</div>
                     <div class="panel-content">
                         <p>You can buy NFTs and Mystery Boxes on the Binance NFT Marketplace in three ways.</p>
                         <ul>
@@ -496,7 +496,7 @@
                             <li>Make an Offer: Make offers to the seller on fixed-price NFTs and Mystery Boxes by clicking</li>
                         </ul>
                     </div>
-                    <div class="accordion-button">What are the NFT Transaction Fees on Binance?</div>
+                    <div class="js-accordion-button">What are the NFT Transaction Fees on Binance?</div>
                     <div class="panel-content">
                         <p>Transaction fees may apply when you mint, trade, deposit, withdraw, create, and burn NFTs on the Binance NFT marketplace. These transaction fees are calculated based on various factors, which include market conditions and network status.</p>
                     </div>
@@ -534,7 +534,7 @@
                     <p><i class="fas fa-globe"></i> English</p>
                     <p><i class="fas fa-dollar-sign"></i> USD-$</p>
                     <p>Theme 
-                    <a class="icon-button theme">
+                    <a class="icon-button js-theme">
                         <i class="fas fa-sun icon-light"></i>
                         <i class="fas fa-moon icon-dark"></i>
                     </a>
@@ -641,8 +641,9 @@
         </footer>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="common.js"></script>
-<script src="script.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/script.js"></script>
+
 </body>
 
 </html>
